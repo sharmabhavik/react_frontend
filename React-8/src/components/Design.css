@@ -1,0 +1,14 @@
+.design {
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  color: black;
+}
+
+.success {
+  background-color: lightcyan;
+}
+
+.error {
+  background-color: orangered;
+}
