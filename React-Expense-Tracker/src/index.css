@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom theme overrides can go here */
+}
+
+/* 1. Global & Base Styles */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+    min-height: 100vh;
+    padding: 1.25rem;
+  }
+
+  #root {
+    width: 100%;
+  }
+
+  /* 2. Default Element Styles (Inputs, Selects, Textareas) */
+  input,
+  select,
+  textarea {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 0.5rem;
+    padding: 0.625rem 0.875rem;
+    outline: none;
+    font: inherit; /* Used standard CSS here directly instead of @apply */
+  }
+
+  /* 3. Default Button Styles */
+  button {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 0.625rem 0.875rem;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    border: none;
+    outline: none;
+    font: inherit; /* Used standard CSS here directly instead of @apply */
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+}
+
+/* 4. Custom Component Classes */
+@layer components {
+  .secondary-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 0.375rem 0.5rem;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    border: none;
+    outline: none;
+    font: inherit; /* Used standard CSS here directly instead of @apply */
+  }
+  
+  .secondary-btn:hover {
+    opacity: 0.9;
+  }
+
+  .secondary-btn:active {
+    transform: scale(0.98);
+  }
+}
